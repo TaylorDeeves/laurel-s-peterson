@@ -1,3 +1,5 @@
+<link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+
 @font-face {
     font-family: "Libre";
     src: url(Libre.otf) format("opentype");
@@ -14,15 +16,15 @@ body {
 
 #logo {
 	position: absolute;
-	top: -32px;
-	left: calc(50% - 96px);
+	top: -42px;
+	left: calc(50% - 98px);
 	height: 198px;
 	width: 198px;
 	background-image: url("LSP.png");
-	background-size: 170px 170px;
+	background-size: 165px 165px;
 	background-color: #ffffff;
 	border-radius: 96px;
-	background-position: 16px 37px;
+		background-position: 16px 37px;
 	background-repeat: no-repeat;
 	z-index: 2;
 }
@@ -53,10 +55,9 @@ body {
 
 #menu li {
 	position: absolute;
-	font-family: "Goudy Old Style";
-        font-weight: 800;
+	font-family: 'Goudy Bookletter 1911', serif;
 	font-size: 20px;
-        color: #222;
+    color: #222;
 }
 
 #menu li a {
