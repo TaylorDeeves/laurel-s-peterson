@@ -1,0 +1,306 @@
+@font-face {
+    font-family: "Libre";
+    src: url(Libre.otf) format("opentype");
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(OpenSans.ttf) format("truetype");
+}
+
+body {
+	background-color: #D1C5F5;
+}
+
+#logo {
+	position: absolute;
+	top: -32px;
+	left: calc(50% - 96px);
+	height: 198px;
+	width: 198px;
+	background-image: url("LSP.png");
+	background-size: 170px 170px;
+	background-color: #ffffff;
+	border-radius: 96px;
+	background-position: 16px 37px;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+
+#circle {
+	position: absolute;
+	height: 192px;
+	width: 192px;
+	top: -32px;
+	left: calc(50% - 96px);
+	background-color: #ffffff;
+	border-radius: 96px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+	z-index: -1;
+}
+
+#menu {
+	list-style-type: none;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0px;
+	padding: 44px 0px 68px 0px;
+	width: 100%;
+	margin-top: 0px;
+	box-shadow: 0px 0px 15px rgba(0,0,0,.1);
+	z-index: -1;
+}
+
+#menu li {
+	position: absolute;
+	font-family: "Goudy Old Style";
+        font-weight: 800;
+	font-size: 20px;
+        color: #222;
+}
+
+#menu li a {
+	color: #000000;
+	text-decoration: none;
+	background-color: #ffffff;
+	padding: 44px 20px 42px 20px;
+}
+
+#menu li a:visited {
+	color: #000000;
+}
+
+#menu li:nth-child(1) {
+	right: calc(50% + 224px);
+}
+
+#menu li:nth-child(2) {
+	right: calc(50% + 128px);
+}
+
+#menu li:nth-child(3) {
+	left: calc(50% + 128px);
+}
+
+#menu li:nth-child(4) {
+	left: calc(50% + 214px);
+}
+
+#colcontainer {
+	width: 950px;
+	max-width: 95%;
+	margin: 200px auto 175px auto;
+}
+
+#leftcol p{
+	display: inline-block;
+        color: #222;
+	width: 62%;
+	height: auto;
+	background-color: #ffffff;
+	margin-left: 0%;
+	margin-top: 0px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+	border-radius: 2px;
+        padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+#leftcol ul{
+	display: inline-block;
+	width: 62%;
+	height: auto;
+	background-color: #ffffff;
+	margin-left: 0%;
+	margin-top: 0px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+	border-radius: 2px;
+        padding: 1.5% 1.5% 1.5% 1.5%;
+        list-style-type: none;
+        color: #222;
+}
+
+.bookinfo{
+	display: inline-block;
+        color: #222;
+	width: 62%;
+	height: auto;
+	background-color: #ffffff;
+	margin-left: 0%;
+	margin-top: 0px;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+	border-radius: 2px;
+        padding: 1.5% 1.5% 1.5% 1.5%;
+}
+
+#rightcol {
+	display: inline-block;
+	width: 33%;
+	height: auto;
+	background-color: #ffffff;
+	margin-right: 0%;
+	float: right;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+	border-radius: 2px;
+        color: #222;
+}
+
+#laurel {
+	width: 62%;
+	background-color: #ffffff;
+	box-shadow: 0px 5px 15px rgba(0,0,0,.1);
+	padding: 1.5% 1.5% 1.5% 1.5%;
+	margin-bottom: 2%;
+	border-radius: 2px;
+}
+
+#newbook {
+	width: 60%;
+	display: block;
+	margin: 15px auto 15px auto;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+	border-radius: 2px;
+}
+
+#purchasebutton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fce99d;
+	border: 1px solid #ad9948;
+	border-radius: 2px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.1);
+	padding: 3px 8px 3px 8px;
+}
+
+#purchasebutton a {
+	text-decoration: none;
+	color: #000000;
+}
+
+#purchasebutton:hover {
+	background-color: #fff3c5;
+	border: 1px solid #e1ca6d;
+}
+
+#purchasebutton:active {
+	background-color: #dcc772;
+	border: 1px solid #88762c;
+}
+
+#purchasebutton, 
+#purchasebutton:hover, 
+#purchasebutton a, 
+#purchasebutton a:hover, 
+#purchasebutton:active, 
+#purchasebutton a:active {
+	cursor: pointer;
+}
+
+p {
+	font-family: "OpenSans";
+	margin: 15px;
+        color: #222;
+}
+
+#main {
+    display: block;
+}
+
+#works, #press, #about, #contact {
+    display: none;
+}
+
+#logo:active {
+	background-color: #f2ebf5;
+}
+
+#menu li a:active {
+	background-color: #f2ebf5;
+}
+
+.quote {
+    font-style: italic;
+}
+
+#contact li {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#contact li:first-child {
+    margin-top: 10px;
+}
+
+#contact li a {
+    font-family: "OpenSans";
+    color: #222;
+}
+
+.bookinfo {
+    margin-bottom: 15px;
+}
+
+.bookinfo #left {
+    width: 25%;
+    float: left;
+    margin-right: 2%;
+    height: 100%;
+}
+
+.bookinfo #right {
+    width: 70%;
+    float: right;
+}
+
+.bookinfo img {
+    width: 100%
+}
+
+.bookinfo #left button {
+    margin-top: 10px;
+}
+
+.bookinfo h1 {
+    font-family: "OpenSans";
+    color: #222;
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: -5px;
+}
+
+.bookinfo h2 {
+    font-family: "OpenSans";
+    color: #222;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 200;
+    font-style: italic;
+    
+}
+
+@media (max-width: 750px) {
+
+    #body {
+        width: 700px;
+    }
+
+	#menu {
+		padding: 38px 0px 74px 0px;
+	}
+
+	#menu li {
+		font-size: 24px;
+	}
+
+	#menu li a {
+		padding: 42px 20px 36px 20px;
+	}
+
+	#menu li:nth-child(1) {
+		right: calc(50% + 250px);
+	}
+
+	#menu li:nth-child(4) {
+		left: calc(50% + 235px);
+	}
+}
