@@ -10,7 +10,8 @@
 
 body {
 	background-color:#D1C5F5;
-	height: 800px;
+	height:800px;
+	font-size:16px;
 }
 
 #logo {
@@ -89,10 +90,10 @@ body {
 #colcontainer {
 	width:950px;
 	max-width:95%;
-	height: 800px;
-	margin-top: 200px;
-	margin-left: auto;
-	margin-right: auto;
+	height:1000px;
+	margin-top:200px;
+	margin-left:auto;
+	margin-right:auto;
 }
 
 #leftcol p {
@@ -106,7 +107,6 @@ body {
 	box-shadow:0 5px 15px rgba(0,0,0,.1);
 	border-radius:2px;
 	padding:1.5%;
-	float:left;
 }
 
 #leftcol ul {
@@ -142,10 +142,15 @@ body {
 	height:auto;
 	background-color:#fff;
 	margin-right:0;
+	margin-bottom:2%;
 	float:right;
 	box-shadow:0 5px 15px rgba(0,0,0,.1);
 	border-radius:2px;
 	color:#222;
+}
+
+#rightcol.big p {
+	margin:15px;
 }
 
 #laurel {
@@ -197,7 +202,6 @@ body {
 
 p {
 	font-family:"OpenSans";
-	margin:15px;
 	color:#222;
 }
 
@@ -292,17 +296,52 @@ p {
 }
 
 #footer {
-	color:#222222;
-	background-color: #ffffff;
-	padding: 15px;
-	text-align: center;
-	font-family: 'OpenSans', sans-serif;
+	color:#222;
+	background-color:#fff;
+	padding:15px;
+	text-align:center;
+	font-family:'OpenSans',sans-serif;
 	box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.mailform {
+	font-family:"OpenSans";
+	float:right;
+	clear:right;
+}
+
+form {
+	padding:3.5%;
+}
+
+.mailform input {
+	width:100%;
+	margin-bottom:10px;
+}
+
+.mailinputs {
+	color:#999;
+	font-style:italic;
+}
+
+#commentfield {
+	padding-bottom:4em;
+	width:100%;
+}
+
+#contact form {
+	display:none;
+	visibility:hidden;
 }
 
 @media (max-width: 750px) {
 	#body {
 		width:700px;
+		font-size:18px;
+	}
+	
+	.bookinfo h2 {
+		font-size:18px;
 	}
 	
 	#menu {
@@ -330,9 +369,18 @@ p {
 		visibility:hidden;
 	}
 	
+	#rightcol.mailform {
+		display:none;
+		visibility:hidden;
+	}
+	
 	#rightcol.hideable {
 		display:block;
 		visibility:visible;
+	}
+	
+	#rightcol.hideable p {
+		margin-left:25%;
 	}
 	
 	#rightcol {
@@ -352,13 +400,12 @@ p {
 		clear:left;
 		width:17%;
 		margin-left:4%;
-		margin-right:4%;
 		margin-bottom:2%;
 	}
 	
 	#laurel {
 		display:none;
-		visility:hidden;
+		visibility:hidden;
 	}
 	
 	#laurelsmall {
@@ -388,7 +435,6 @@ p {
 	}
 	
 	#rightcol p {
-		text-indent:3%;
 		margin-right:1%;
 		font-size:18px;
 	}
@@ -397,8 +443,44 @@ p {
 		width:100%;
 	}
 	
+	#contact {
+		margin-left:auto;
+		margin-right:auto;
+		width:90%;
+	}
+	
 	#contact ul {
-		width:300px;
-		margin-left:calc(50% - 150px);
+		width:38%;
+		height:235px;
+		margin:0;
+		padding:3% 2% 1%;
+		margin-left:8%;
+		margin-right:4%;
+	}
+	
+	#contact form {
+		font-family:"OpenSans";
+		visibility:visible;
+		display:inline-block;
+		background:#fff;
+		width:39%;
+		height:235px;
+		box-shadow:0 0 15px rgba(0,0,0,.1);
+		margin:0;
+		padding:2%;
+		border-radius:2px;
+	}
+	
+	#contact form input {
+		width:100%;
+		margin-bottom:10px;
+	}
+	
+	#contact #commentfield {
+		padding-bottom:3em;
+	}
+	
+	#colcontainer {
+		height:850px;
 	}
 }

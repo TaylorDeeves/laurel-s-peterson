@@ -15,9 +15,10 @@
 </head>
 
 <body>
+	<!-- this logo works, don't change anything -->
     <a href=""><div id="logo" onclick="showMain(event, this)"></div></a>
-	
-	<div id="circle"></div>
+
+    <div id="circle"></div>
 
     <ul id="menu">
         <li><a class="navButton" href="#" data-target="works">works</a></li>
@@ -36,6 +37,17 @@
             <h1>New Book: That's the Way the Music Sounds</h1>
 
             <p>Laurel Peterson's poems are about what binds us to each other, the natural world, and the spiritual world, in language that is both forceful in it's precision and tender in it's rendering: "sewn into your heart is the other end, knotted just under the fragile epicardium. We must both move, so very gently." These poems have a wonderfully wide tonal range.</p>
+        </div>
+
+        <div id="rightcol" class="mailform">
+            <form action="MAILTO:laurelpeterson@att.net" method="post" enctype="text/plain">
+                <strong>Send me a message!</strong><br>
+                <br>
+                <input type="text" name="name" value="name" id="namefield" class="mailinputs"><br>
+                <input type="text" name="mail" value="email address" id="mailfield" class="mailinputs"><br>
+                <input type="text" name="comment" value="enter message here" size="50" id="commentfield" class="mailinputs"><br>
+                <input type="submit" value="Send">
+            </form>
         </div>
 
         <div id="rightcol" class="hideable">
@@ -109,10 +121,20 @@
 
                     <li><a href="http://www.goodreads.com/author/show/3414564.Laurel_S_Peterson">Good Reads</a></li>
                 </ul>
+                
+            <form action="MAILTO:laurelpeterson@att.net" method="post" enctype="text/plain">
+                <strong>Send me a message!</strong><br>
+                <br>
+                <input type="text" name="name" value="name" id="namefield" class="mailinputs"><br>
+                <input type="text" name="mail" value="email address" id="mailfield" class="mailinputs"><br>
+                <input type="text" name="comment" value="enter message here" size="50" id="commentfield" class="mailinputs"><br>
+                <input type="submit" value="Send">
+            </form>
+                
             </div>
         </div>
-    </div>
-	<br>
+    </div><br>
+
     <div id="footer">
         Laurel S. Peterson | NCC Web Dev 252 | Some Contact Info
     </div>
